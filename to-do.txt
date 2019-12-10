@@ -1,0 +1,9 @@
+				Portfolio Ideas
+----------------------------------------------------------------------------
+
+- Domain/Host
+- Images
+- Color Scheme
+- Logo
+- Hardcode Resume
+- Use ::after to add | after each section of navbar

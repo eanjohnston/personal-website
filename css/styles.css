@@ -1,0 +1,363 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Browser Upgrade Prompt */
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* hides an element, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* no break */
+.nobr {
+    white-space: nowrap;
+}
+
+/* STRUCTURE */
+.container {
+    max-width: 1050px;
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 2.0em;
+    padding-bottom: 2.0em;
+}
+
+
+/** Extra small devices (phones, less than 768px) */
+
+/** GENERAL */
+body {
+  margin: 0;
+  background: url("../images/beanstalk.png") repeat;
+}
+
+/** TYPOGRAPHY */
+h1, h2, h3, h4, h5, h6, p, li, a, td, figcaption {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+h2 {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h3 {
+    letter-spacing: 2px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+/** NAV */
+nav {
+    position: relative;
+    z-index: 95
+    height: 15vh;
+    background-color: black;
+    margin-top: 0;
+    padding: 0;
+    
+}
+
+nav li {
+    position: relative;
+    z-index: 105;
+    color: white;
+    background: none;
+}
+
+.webNav {
+    display: none;
+}
+
+/* Style the navigation menu */
+ .logo_small {
+    width: 75px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+.topnav {
+    overflow: hidden;
+    background: url(../images/background02.png) repeat center center;
+    background-size: cover;
+    position: sticky;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #mobileLinks {
+    display: none;
+    background-color: black
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    z-index: 105;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: darkgray;
+    color: white;
+  }
+  
+/** HEADER */
+
+header {
+    height: 100vh;
+    position: relative;
+    z-index: 100;
+    margin-top: -25vh;
+    background:url(../iCloud/index-header-2.png) no-repeat center center scroll;
+    background-size: cover;
+}
+
+
+/** Main */
+
+
+article {
+   text-align: left;
+   color: Black;
+   margin-top: 2.0em;
+   margin-bottom: 2.0em;
+}
+
+article h1 {
+    text-decoration: underline;
+}
+
+
+/**Projects Gallery */
+.projects {
+    background: url(../images/beanstalk-dark.png) repeat;
+    color: white;
+    text-decoration: underline;
+}
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+
+
+
+
+/* Footer */
+footer {
+    display: none;
+    color: black;
+    margin-top: 3.0em;
+}
+
+footer .container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+footer .container section {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: left;
+    color: var(--bbc-aqua);
+    margin-bottom: 0;
+}
+
+.footer_navigation {
+    display: flex;
+}
+
+.footer_navigation section {
+    padding: 1.0em;
+}
+
+.social_media {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.social_media section {
+    padding: 1.0em;
+}
+
+
+footer .container section p a {
+    color:var(--bbc-aqua);
+    text-decoration: none;
+    padding-top: 0.4em;
+}
+
+footer .container section p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 0.4em;
+}
+
+footer .container section figure {
+    margin: 0 auto;
+    padding-top: 0.75em;
+}
+
+
+footer .container section > a {
+    color: var(--bbc-aqua);
+    font-size: 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-bottom: 1.0em;
+}
+
+footer .container section a:hover {
+    color: var(--bbc-aqua);
+    text-decoration: underline;
+}
+
+footer section ul li {
+    list-style: none;
+    padding-bottom: 1.8em;
+    margin-top: -1.0em;
+}
+
+footer section ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--bbc-aqua);
+    text-transform: uppercase;
+}
+
+
+
+
+/** BUTTONS AND LINKS */
+
+
+/** MEDIA QUERIES */
+/** Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    #tag { background-color: #FF9900;
+    z-index: 200; }
+
+
+}
+
+/** Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    #tag { background-color: #00AA88; }
+
+  
+
+    nav .webNav {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin-top: -8vh;
+        padding-right: 3em;
+    }
+
+    .webNav  li {
+        padding: 0.6em;
+        list-style: none;
+        text-decoration: none;
+        font-size: 22px;
+    }
+
+    .webNav a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .webNav .logo {
+        padding-left: 1em;
+        padding-right: auto;
+    }
+
+    .webNav img {
+        margin-top: -3vh;
+    }
+    
+    .webNav .active {
+        text-emphasis: underline;
+    }
+
+    footer {
+        display: block;
+    }
+ 
+
+/** Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    #tag { background-color: #674EA7; }
+    
+
+}
+
